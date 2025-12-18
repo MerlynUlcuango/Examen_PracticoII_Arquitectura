@@ -66,4 +66,8 @@ class OrderSubject:
     def notify(self, order: Order) -> None:
         """Notify all observers about order changes"""
         for observer in self._observers:
-            observer.update(order)
+            try:
+                observer.update(order)
+            except Exception as e:
+                # Log error but don't break notification chain
+                print(f"[ERROR] Observer {observer.__class__.__name__} failed: {e}")

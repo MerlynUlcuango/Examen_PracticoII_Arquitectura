@@ -2,8 +2,7 @@
 Customer Entity - Domain Layer
 Represents a customer in the e-commerce system
 """
-from dataclasses import dataclass, field
-from typing import List
+from dataclasses import dataclass
 
 
 @dataclass

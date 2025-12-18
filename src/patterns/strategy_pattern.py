@@ -3,7 +3,6 @@ Strategy Pattern - Behavioral Design Pattern
 Defines a family of algorithms and makes them interchangeable
 """
 from abc import ABC, abstractmethod
-from typing import List
 from src.domain.product import Product
 
 

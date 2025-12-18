@@ -4,7 +4,7 @@ Represents an order in the e-commerce system
 """
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import List, Dict
+from typing import List
 from enum import Enum
 
 
